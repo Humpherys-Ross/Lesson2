@@ -1,139 +1,133 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WeatherNow BYU</title>
+    <script src="js/java.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WeatherNow BYU</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
+  <body>
+    <header>
+      <img src="images/logo.png" alt="logo" />
+      <h1>WeatherNow</h1>
+      <h2 class="subheading">Accurate 24h</h2>
+    </header>
 
-  <link rel="stylesheet" href="css/style.css" />
-  <script>
-    function ShowMenu() {
-      var x = document.getElementById("menu");
-
-      if (x.className === "") {
-        x.className = "responsive";
-      } else {
-        x.className = "";
-      }
-    }
-  </script>
-</head>
-
-<body>
-  <header>
-    <img src="images/logo.png" alt="logo" />
-    <h1>WeatherNow</h1>
-    <h2 class="subheading">Accurate 24h</h2>
-  </header>
-
-  <nav>
-    <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
-    <ul id="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#" class="active">Preston</a></li>
-      <li><a href="#">Soda Springs</a></li>
-      <li><a href="#">Fish Haven</a></li>
-      <li><a href="#">Storm Center</a></li>
-      <li><a href="#">Gallery</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <figure>
-      <img
-        src="https://images.pexels.com/photos/356977/pexels-photo-356977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        alt="Sunny" />
-    </figure>
-
-    <h1>Franklin</h1>
-    <section class="section-half">
-      <h2>Today's Weather</h2>
-      <ul>
-        <li>High: 90°</li>
-        <li>Low: 66°</li>
-        <li>Chance of Precipitation: 0%</li>
-        <li>Wind: 5mph from the South West</li>
+    <nav>
+      <button onclick="ShowMenu()"><i class="fa fa-bars"></i> MENU</button>
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <section class="section-half">
-      <h2>Sunny</h2>
-      <img src="images/summer-500.jpeg" alt="Summer icon" />
-    </section>
+    <main>
+      <figure>
+        <img
+          src="https://images.pexels.com/photos/356977/pexels-photo-356977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Sunny"
+        />
+      </figure>
 
-    <section class="forecast">
-      <h2>Forecast Details</h2>
-      <table>
-        <tbody>
-          <tr>
-            <th colspan="10" style="text-align: center; width: 470px;">
-              <strong>10-Day Forecast</strong>
-            </th>
-          </tr>
-          <tr>
-            <td style="text-align: center; width: 47px;">1</td>
-            <td style="text-align: center; width: 47px;">2</td>
-            <td style="text-align: center; width: 47px;">3</td>
-            <td style="text-align: center; width: 47px;">4</td>
-            <td style="text-align: center; width: 47px;">5</td>
-            <td style="text-align: center; width: 47px;">6</td>
-            <td style="text-align: center; width: 47px;">7</td>
-            <td style="text-align: center; width: 47px;">8</td>
-            <td style="text-align: center; width: 47.8281px;">9</td>
-            <td style="text-align: center; width: 46.1719px;">10</td>
-          </tr>
-          <tr>
-            <td style="width: 47px;">89°F</td>
-            <td style="width: 47px;">87°F</td>
-            <td style="width: 47px;">78°F</td>
-            <td style="width: 47px;">75°F</td>
-            <td style="width: 47px;">72°F</td>
-            <td style="width: 47px;">72°F</td>
-            <td style="width: 47px;">79°F</td>
-            <td style="width: 47px;">83°F</td>
-            <td style="width: 47.8281px;">85°F</td>
-            <td style="width: 46.1719px;">89°F</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <h1>Franklin</h1>
+      <section class="section-half">
+        <h2>Today's Weather</h2>
+        <ul>
+          <li>High: 90°</li>
+          <li>Low: 66°</li>
+          <li>Chance of Precipitation: 0%</li>
+          <li>Wind: 5mph from the South West</li>
+        </ul>
+      </section>
 
-    <section class="history">
-      <h2>This day in History</h2>
-      <img src="" alt="" />
+      <section class="section-half">
+        <h2>Sunny</h2>
+        <img src="images/summer-500.jpeg" alt="Summer icon" />
+      </section>
 
-      <p></p>
-    </section>
-  </main>
+      <section class="forecast">
+        <h2>Forecast Details</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th colspan="10" style="text-align: center; width: 470px;">
+                <strong>10-Day Forecast</strong>
+              </th>
+            </tr>
+            <tr>
+              <td style="text-align: center; width: 47px;">1</td>
+              <td style="text-align: center; width: 47px;">2</td>
+              <td style="text-align: center; width: 47px;">3</td>
+              <td style="text-align: center; width: 47px;">4</td>
+              <td style="text-align: center; width: 47px;">5</td>
+              <td style="text-align: center; width: 47px;">6</td>
+              <td style="text-align: center; width: 47px;">7</td>
+              <td style="text-align: center; width: 47px;">8</td>
+              <td style="text-align: center; width: 47.8281px;">9</td>
+              <td style="text-align: center; width: 46.1719px;">10</td>
+            </tr>
+            <tr>
+              <td style="width: 47px;">89°F</td>
+              <td style="width: 47px;">87°F</td>
+              <td style="width: 47px;">78°F</td>
+              <td style="width: 47px;">75°F</td>
+              <td style="width: 47px;">72°F</td>
+              <td style="width: 47px;">72°F</td>
+              <td style="width: 47px;">79°F</td>
+              <td style="width: 47px;">83°F</td>
+              <td style="width: 47.8281px;">85°F</td>
+              <td style="width: 46.1719px;">89°F</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-  <footer>
-    <section class="section-half">
-      <h3>Address</h3>
-      <p>The Weather Center</p>
-      <p>Preston, ID 87654</p>
-      <p>123 Main Street.</p>
-    </section>
+      <section class="history">
+        <h2>This day in History</h2>
+        <img src="" alt="" />
 
-    <section class="section-half">
-      <h3>Phone</h3>
-      <p>(801) 555-1234</p>
-    </section>
+        <p></p>
+      </section>
+    </main>
 
-    <section class="section-half">
-      <h3>Email</h3>
-      <p>contact@yoururl.com</p>
-    </section>
+    <footer>
+      <section class="section-half">
+        <h3>Address</h3>
+        <p>The Weather Center</p>
+        <p>Preston, ID 87654</p>
+        <p>123 Main Street.</p>
+      </section>
 
-    <div class="section-copyright">
-      <p>© 2018 • All rights reserved</p>
-    </div>
-  </footer>
-</body>
+      <section class="section-half">
+        <h3>Phone</h3>
+        <p>(801) 555-1234</p>
+      </section>
 
+      <section class="section-half">
+        <h3>Email</h3>
+        <p>contact@yoururl.com</p>
+      </section>
+
+      <div class="section-copyright">
+        <p>© 2018 • All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
